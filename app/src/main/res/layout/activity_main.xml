@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="odigeo.nativeteam.rxandroidexamples.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonJust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just" />
+
+        <Button
+            android:id="@+id/buttonDefer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Defer" />
+
+        <Button
+            android:id="@+id/buttonFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From" />
+
+        <Button
+            android:id="@+id/buttonMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonContainer"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonJust2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just 2" />
+
+        <Button
+            android:id="@+id/buttonDefer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Defer 2" />
+
+        <Button
+            android:id="@+id/buttonFrom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From 2"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/buttonMap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map 2" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/exampleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:hint="Result TextView" />
+
+</RelativeLayout>

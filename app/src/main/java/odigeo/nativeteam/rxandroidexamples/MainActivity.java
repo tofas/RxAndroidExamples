@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
     Button buttonDefer2;
     Button buttonMap2;
 
-    private Observable<List<Integer>> integerListObservable = Observable.fromCallable(() -> generateIntegerList());
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onButtonDefer2Clicked() {
-        integerListObservable
+        Observable.fromCallable(() -> generateIntegerList())
                 .subscribeOn(Schedulers.computation())
                 .doOnSubscribe(() -> textView.setText(""))
                 .observeOn(AndroidSchedulers.mainThread())

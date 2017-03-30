@@ -72,6 +72,15 @@
             android:text="Map 2" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Each row printed represents one onNext() call"
+        android:layout_below="@+id/buttonContainer2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/exampleTextView"
